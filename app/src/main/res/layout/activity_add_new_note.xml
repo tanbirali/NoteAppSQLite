@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    android:orientation="vertical"
+    tools:context=".AddNewNote">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/notesTextView"
+            android:fontFamily="@font/poppins"
+            android:text="Add New Notes"
+            android:textStyle="bold"
+            android:textColor="@color/orange"
+            android:textSize="30sp"/>
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/saveButton"
+            android:src="@drawable/baseline_done_24"
+            android:clickable="true"
+            android:layout_marginLeft="80dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/titleEditText"
+            android:hint="Enter the title"
+            android:textColorHint="@color/orange"
+            android:textSize="24sp"
+            android:background="@drawable/orangeshape"
+            android:padding="10dp"
+            android:maxLines="1"
+            android:textStyle="bold"/>
+
+        <EditText
+            android:id="@+id/contentEditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/orangeshape"
+            android:gravity="top"
+            android:padding="10dp"
+            android:hint="Enter the content here"
+            android:textColorHint="@color/orange"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>
